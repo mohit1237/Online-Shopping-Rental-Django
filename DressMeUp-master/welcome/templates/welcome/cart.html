@@ -1,0 +1,128 @@
+{% extends 'welcome/header.html' %}
+{% load staticfiles %}
+	{% block body %}
+	<style type="text/css">
+		body {
+			background-color: #f6f6f6;
+			letter-spacing: 2px;
+		}
+		.btn {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: 1px solid black;
+    padding: 8px;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+.btn:hover {
+        background-color: black;
+        color: white;
+    }
+      	a{
+  		color: black;
+  	}
+
+	</style>
+	<br><br><br>
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-sm-12 col-md-10 col-md-offset-1">
+        <h1>My Cart</h1>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th class="text-center">Price</th>
+                        <th class="text-center">Total</th>
+                        <th> </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="row" style="padding-top: 20px;">
+             			<div class="col-sm-7 col-md-5">
+                            <a class="" href="#"> <img class="media-object" src="https://static.wixstatic.com/media/84770f_d9b51e08b51c43319cc6a36f808d7bf9.png/v1/fill/w_300,h_300,q_85,usm_0.66_1.00_0.01/84770f_d9b51e08b51c43319cc6a36f808d7bf9.png" style="width: 150px; height:150px;"> </a></div>
+                               <div class="col-sm-8 col-md-6">
+                                 <h4>Product name</h4>
+                                <h5> SKU : 143</h5> 
+                                <h5> Size M</h5>
+                                <span>Status: </span><span class="text-success"><strong>In Stock</strong></span>
+                            </div>
+                        </td>
+ 
+                        <td class="col-sm-1 col-md-1" style="text-align: center; padding-top:20px;">
+                        <input type="number" class="form-control" id="exampleInputEmail1" value="3">
+                        </td>
+                        <td class="col-sm-1 col-md-1 text-center" style="font-size: 17px;padding-top: 20px;"><strong>$4.87</strong></td>
+                        <td class="col-sm-1 col-md-1 text-center" style="padding-top: 20px;font-size: 20px;"><strong>$14.61</strong></td>
+                        <td class="col-sm-1 col-md-1" style="padding-top: 20px;">
+                        <button type="button" class="btn">
+                            <span class="glyphicon glyphicon-remove"></span> Remove
+                        </button></td>
+                    </tr>
+             		<tr>
+                        <td class="row" style="padding-top: 20px;">
+             			<div class="col-sm-7 col-md-5">
+                            <a class="" href="#"> <img class="media-object" src="https://static.wixstatic.com/media/84770f_d9b51e08b51c43319cc6a36f808d7bf9.png/v1/fill/w_300,h_300,q_85,usm_0.66_1.00_0.01/84770f_d9b51e08b51c43319cc6a36f808d7bf9.png" style="width: 150px; height:150px;"> </a></div>
+                               <div class="col-sm-8 col-md-6">
+                                 <h4>Product name</h4>
+                                <h5> SKU : 143</h5> 
+                                <h5> Size M</h5>
+                                <span>Status: </span><span class="text-success"><strong>In Stock</strong></span>
+                            </div>
+                        </td>
+ 
+                        <td class="col-sm-1 col-md-1" style="text-align: center; padding-top:20px;">
+                        <input type="number" class="form-control" id="exampleInputEmail1" value="3">
+                        </td>
+                        <td class="col-sm-1 col-md-1 text-center" style="font-size: 17px;padding-top: 20px;"><strong>$4.87</strong></td>
+                        <td class="col-sm-1 col-md-1 text-center" style="padding-top: 20px;font-size: 20px;"><strong>$14.61</strong></td>
+                        <td class="col-sm-1 col-md-1" style="padding-top: 20px;">
+                        <button type="button" class="btn">
+                            <span class="glyphicon glyphicon-remove"></span> Remove
+                        </button></td>
+                    </tr>
+                    <tr>
+                        <td>   </td>
+                        <td>   </td>
+                        <td>   </td>
+                        <td><h5>Subtotal</h5></td>
+                        <td class="text-right"><h5><strong>$24.59</strong></h5></td>
+                    </tr>
+                    <tr>
+                        <td>   </td>
+                        <td>   </td>
+                        <td>   </td>
+                        <td><h5>Estimated shipping</h5></td>
+                        <td class="text-right"><h5><strong>$6.94</strong></h5></td>
+                    </tr>
+                    <tr>
+                        <td>   </td>
+                        <td>   </td>
+                        <td>   </td>
+                        <td><h3>Total</h3></td>
+                        <td class="text-right"><h3><strong>$31.53</strong></h3></td>
+                    </tr>
+                    <tr>
+                        <td>   </td>
+                        <td>   </td>
+                        <td>   </td>
+                        <td>
+                        <button type="button" class="btn">
+                            <span class="glyphicon glyphicon-shopping-cart"></span> Continue Shopping
+                        </button></td>
+                        <td><a href="{% url 'welcome:step1' %}">
+                        <button type="button" class="btn">
+                            Checkout <span class="glyphicon glyphicon-play"></span>
+                        </button></a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+	{% endblock %}
