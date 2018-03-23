@@ -6,4 +6,4 @@ College Group Project developed using latest web development technologies ie Dja
 
 
 
-Credits : @rushi725 @mohit1237 @nikesh97
+Credits : @mohit1237
